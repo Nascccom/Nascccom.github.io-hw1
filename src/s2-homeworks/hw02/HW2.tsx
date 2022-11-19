@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import Affairs from './affairs/Affairs'
 import s2 from '../../s1-main/App.module.css'
-import affair from "./affairs/affair/Affair";
+
+
 
 /*
 * 1 - описать типы AffairPriorityType, AffairType -completed
@@ -18,7 +19,8 @@ import affair from "./affairs/affair/Affair";
 * */
 
 // types
-export type AffairPriorityType = 'high' | 'low' | 'middle' // need to fix any
+export type AffairPriorityType = string // need to fix any
+
 export type AffairType = {
   _id: number, // need to fix any
   name: string, // need to fix any
@@ -36,7 +38,7 @@ let defaultAffairs: Array<AffairType> = [ // need to fix any
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
+export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => {
 //need to fix
   if (filter === 'high') {
     return affairs.filter(el => el.priority === "high")
@@ -46,9 +48,8 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): A
   }
   if (filter === 'middle') {
     return affairs.filter(el => el.priority === "middle")
-  } else {
-    return affairs
   }
+    return affairs
 }
 
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
