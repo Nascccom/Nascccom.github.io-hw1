@@ -5,10 +5,12 @@ let name: any
 const setName = (a: any) => {
     name = a
 }
+
 let error: any
 const setError = (a: any) => {
     error = a
 }
+
 let added: any
 const addUserCallback = () => {
     added = true

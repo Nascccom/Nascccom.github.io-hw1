@@ -3,8 +3,6 @@ import Greeting from './Greeting'
 import {UserType} from './HW3'
 
 
-
-
 type GreetingContainerPropsType = {
     users: Array<UserType> // need to fix any
     addUserCallback: (name: string) => void // need to fix any
@@ -16,16 +14,16 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
     if (name.trim() === '') {
         setError('Ошибка! Введите имя!')
     }
-    else {
+    if (name.trim() !== '') {
         setName(name)
         addUserCallback(name)
-        // setName('')
+        setName('')
     }
 
 }
 
 export const pureOnBlur = (name: string, setError: (error: string) => void) => { // если имя пустое - показать ошибку
-    if (!name || !name.trim()) {
+    if (!name.trim()) {
         setError('Ошибка! Введите имя!')
     }
 }
@@ -54,7 +52,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users,
 
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
-        setName('')
         setTotalUsers(totalUsers +1)
         setLastUserName(name)
     }
