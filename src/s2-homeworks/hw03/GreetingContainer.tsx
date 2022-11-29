@@ -14,8 +14,8 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
     if (name.trim() === '') {
         setError('Ошибка! Введите имя!')
     }
-    if (name.trim() !== '') {
-        setName(name)
+    else {
+        // setName(name)
         addUserCallback(name)
         setName('')
     }
@@ -38,7 +38,8 @@ export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => v
 // function GreetingContainer(props: GreetingPropsType) {
 
 // более современный и удобный для про :)
-const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users,
+const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
+                                                                     users,
                                                                      addUserCallback,
                                                                  }) => {
     // деструктуризация пропсов
@@ -48,13 +49,11 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users,
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value) // need to fix
         error && setError('')
-
     }
 
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
-        setTotalUsers(totalUsers +1)
-        setLastUserName(name)
+        // setLastUserName(name)
     }
 
     const onBlur = () => {
@@ -65,8 +64,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users,
         pureOnEnter(e, addUser)
     }
 
-    const [totalUsers, setTotalUsers] = useState <number>(0)           // need to fix
-    const [lastUserName, setLastUserName] = useState<string>('')      // need to fix
+    const totalUsers = users.length
+    // const [lastUserName, setLastUserName] = useState<string>('')
+    const lastUserName = users[totalUsers-1]?.name
 
     return (
       <Greeting
