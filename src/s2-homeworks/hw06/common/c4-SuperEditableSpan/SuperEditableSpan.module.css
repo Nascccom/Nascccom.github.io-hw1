@@ -1,11 +1,19 @@
 .spanBlock {
+    display: inline-block;
+    height: 35px;
+    padding-top: 10px;
+    color: #0080FF;
+    cursor: pointer;
 }
 
 .span {
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .input {
 }
 
 .pen {
+    margin-right: 15px;
 }
