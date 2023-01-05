@@ -20,13 +20,13 @@
     width: 372px;
     height: 36px;
     margin: 10px 12px 10px 0;
-    border: 1px solid #D1D1D1;
+    border: 1px solid #000000;
     border-radius: 5px;
 
 }
 
 .input:focus {
-    border: red;
+    border: 1px solid #000000;
 }
 
 .errorInput {
@@ -45,8 +45,6 @@
     border-radius: 3px;
     font-weight: 600;
     color: #FFFFFF;
-    /*display: inline-block;*/
-    /*margin-bottom: 26px;*/
 }
 
 .button:focus {
