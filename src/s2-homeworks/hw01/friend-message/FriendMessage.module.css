@@ -1,5 +1,5 @@
 .friendMessage {
-    margin-bottom: 73px;
+    margin-bottom: 10px;
 }
 
 .friendImageAndText {
@@ -11,19 +11,19 @@
 
 .friendImageAndText img {
     margin-right: 10px;
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
 }
 
 .friendText {
     transform-style: preserve-3d;
     max-width: 600px;
     position: relative;
-    padding: 3px 25px 8px 13px;
+    padding: 10px;
     color: #000000;
-    border-radius: 6px;
-    background: #F5F7FB;
-    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    border-radius: 5px 5px 5px 0;
+    background: rgb(245 247 251);
+    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
 }
 
 .friendText:after {
@@ -31,11 +31,12 @@
     position: absolute;
     transform: translateZ(-1px);
     bottom: 0;
-    right: 99%;
+    right: 100.1%;
     display: block;
     width: 20px;
     height: 20px;
-    background: radial-gradient(40px at top left, transparent 50%, #F5F7FB 0) no-repeat right bottom;
+    background: radial-gradient(42px at top left, transparent 46%, rgba(245 247 251 ) 1%) no-repeat;
+    box-shadow: 1px 1px 1px rgb(15 26 24 / 5%);
 }
 
 .friendName {
@@ -45,7 +46,7 @@
 }
 
 .friendMessageText {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-size: 16px;
     max-width: 600px;
     white-space: normal;
