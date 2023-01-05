@@ -1,5 +1,5 @@
 .input:focus {
-
+    max-width: 100%;
 }
 
 .input {
@@ -8,7 +8,7 @@
     border-radius: 5px;
     Width: 372px;
     Height: 36px;
-    outline:none;
+    outline: none;
 }
 
 .inputWrapper {
