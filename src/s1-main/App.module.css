@@ -1,22 +1,20 @@
 
 .App {
-    --header_height: 60px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+
 }
 
 .hw {
-    margin: 100px auto;
-    max-width: 1200px;
-
+    margin: 0 auto;
 }
+
 .hwTitle {
-    margin: 100px 0 35px 200px;
+    margin: 50px 0 30px 100px;
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
-
 }
