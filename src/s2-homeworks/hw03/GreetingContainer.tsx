@@ -15,7 +15,6 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
         setError('Ошибка! Введите имя!')
     }
     else {
-        // setName(name)
         addUserCallback(name)
         setName('')
     }
@@ -53,7 +52,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
-        // setLastUserName(name)
     }
 
     const onBlur = () => {
@@ -65,7 +63,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const totalUsers = users.length
-    // const [lastUserName, setLastUserName] = useState<string>('')
     const lastUserName = users[totalUsers-1]?.name
 
     return (
