@@ -9,6 +9,9 @@
     font-weight: 600;
     margin-right: 25px;
 }
+.button:last-child{
+    margin-right: 0;
+}
 
 .disabled {
     background: #004D99;
@@ -21,10 +24,10 @@
     background-color: #ffffff;
     color: var(--custom-color);
     border: 1px solid var(--custom-color);
-
 }
 
 .default {
+    width: 165px;
     background: var(--custom-color);
     color: #FFFFFF;
 }
@@ -35,7 +38,6 @@
 }
 
 .default:hover {
-    width: 165px;
     background: #0080FF;
 }
 
@@ -51,7 +53,6 @@
 
 
 .default:active {
-    width: 165px;
     background: #0059B3;
 }
 
