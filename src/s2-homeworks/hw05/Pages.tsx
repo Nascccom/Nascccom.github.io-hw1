@@ -13,7 +13,7 @@ export const PATH = {
 
 function Pages() {
     return (
-        <div style={{margin: '0 200px'}}>
+        <div style={{margin: '100px 200px 200px'}}>
             {/*Routes выбирает первый подходящий роут*/}
             <Routes>
                 {/*роутинг будут писать студенты*/}
