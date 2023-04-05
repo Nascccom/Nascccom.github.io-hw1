@@ -16,7 +16,6 @@ function HW11() {
     const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 0))
     const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100))
 
-    // console.log(value1, value2)
     const change = (event: React.SyntheticEvent | Event, value: number | number[]) => {
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
 
@@ -26,7 +25,7 @@ function HW11() {
             setValue1(value[0])
             setValue2(value[1])
         }
-        console.log(value)
+
     }
 
     return (
@@ -42,6 +41,7 @@ function HW11() {
                         // сделать так чтоб value1 изменялось // пишет студент
                         value={value1}
                         onChange={change}
+
                       />
                   </div>
                   <div className={s.wrapper}>
