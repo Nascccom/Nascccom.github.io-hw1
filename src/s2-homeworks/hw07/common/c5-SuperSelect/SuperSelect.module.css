@@ -11,6 +11,8 @@
     cursor: pointer;
 }
 
+.option {
+}
 
 .option:checked {
     background-color: #0066CC;
