@@ -1,16 +1,23 @@
 .buttonsContainer {
+    margin-bottom: 80px;
 }
 
 .responseContainer {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1022px;
+    height: 315px;
 }
 
 .imageContainer {
+
 }
 
 .image {
 }
 
 .textContainer{
+    width: 100px
 }
 
 .code {
