@@ -3,23 +3,29 @@
 }
 
 .developer {
-
 }
 
 .techHeader {
     width: 50vw;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .developerHeader {
-
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .row {
     display: flex;
+    padding: 10px;
+    border-bottom: 2px solid #E5E5E5;
 }
 
 .rowHeader {
     display: flex;
+    background-color: #E5E5E5;
+    padding: 10px
 }
 
 .loading {
