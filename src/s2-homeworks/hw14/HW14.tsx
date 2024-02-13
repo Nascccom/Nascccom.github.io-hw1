@@ -31,7 +31,6 @@ const HW14 = () => {
     const [techs, setTechs] = useState<string[]>([])
 
     const sendQuery = (value: string) => {
-        console.log('Request start:   ' + value)
         setLoading(true)
         getTechs(value)
           .then((res) => {
@@ -55,7 +54,7 @@ const HW14 = () => {
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        console.log(`params: ${params}`)
+
         sendQuery(params.find || '')
         setFind(params.find || '')
     }, [])
